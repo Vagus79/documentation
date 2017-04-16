@@ -124,7 +124,7 @@ The script **Sensors and Motors/gpio-citytemperaturegraph** shows how to get the
 
 #### Reading temperatures
 - `gettemp` connects to a couple of possible temperature sensors.
-    + `gettemp + cpu` reads the cpu temperature and creates a sensor variable `cputtemp`. For example: `gettempcpu`. 
+    + `getcputemp` reads the cpu temperature and creates a sensor variable `cputtemp`. For example: `getcputemp`. 
     An example project that plots a graph of the CPU temperature can be found in the **Sensors and Motors/gpio-cputtemperaturegraph** project.
     + `gettemp` on its own will try to find an attached 1-wire DS18B20 thermal sensor and creates a sensor variable named `temp + [the twelve-digit sensor ID]`.
     + `gettemp + [a previously discovered twelve-digit 1-wire id]` will directly connect to that identified DS18B20 sensor if possible.
